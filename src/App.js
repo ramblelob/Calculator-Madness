@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import "./App.css";
 
 const App = () => {
     const [result, setResult] = useState("React Calculator");
@@ -10,7 +11,7 @@ const App = () => {
                 <form>
                     <input type="text" value={result}/>
                 </form>
-            </div>
+            
             <div className="keypad">
                 <button>Clear</button>
                 <button>C</button>
@@ -30,6 +31,7 @@ const App = () => {
                 <button>0</button>
                 <button>.</button>
                 <button>=</button>
+            </div>
             </div>
         </div>
     );
