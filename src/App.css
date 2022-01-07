@@ -7,9 +7,7 @@
 body {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* background-color: hotpink; */
-    background: radial-gradient( magenta, yellow, cyan);
+    background: linear-gradient(90deg, magenta, yellow, cyan);
 }
 
 .container {
@@ -19,28 +17,36 @@ body {
     transform: translate(-50%, -50%);
     width: 256px;
     margin: 0 auto;
+    padding-top: 5px;
     text-align: center;
     border: 10px solid black;
     background-color: black;
-    border-radius: 5px;
+    border: 10px solid purple;
+    background-color: purple;
+    border-radius: 10px;
+}
+
+.container:hover {
+    border: 10px solid black;
+    background-color: black;
 }
 
 input[type="text"] {
     height: 75px;
     border: 0px;
-    width: 250px;
-    /* color: white; */
-    /* background-color: darkgrey; */
-    background: linear-gradient( grey, silver);
+    width: 240px;
+    background-color: grey;
+    background: linear-gradient(grey, silver, white);
     text-align: right;
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 1px;
+    border-radius: 8px;
 }
 
 input:focus,
 input:active {
-    outline: none
+    outline: none;
 }
 
 .keypad {
@@ -52,11 +58,19 @@ input:active {
 
 #clear {
     grid-column: 1/3;
-    /* grid-row: 1; */
+    border: none;
+}
+
+#clear:hover {
+    background-color: magenta;
 }
 
 #equals {
     grid-column: 3/5;
+}
+
+#equals:hover {
+    background-color: cyan;
 }
 
 button {
@@ -66,5 +80,13 @@ button {
     cursor: pointer;
     font-size: 1.4rem;
     font-weight: 500;
-    /* background-color: silver; */
+}
+
+button:hover {
+    background-color: silver;
+    border: 1px solid grey;
+}
+
+#backspace:hover {
+    background-color: yellow;
 }
