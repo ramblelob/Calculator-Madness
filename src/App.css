@@ -29,21 +29,6 @@
   justify-content: right;
 }
 
-.dashed-line{
-  flex:1;
-  margin-top:10px;
-  border-bottom: 1px solid grey;
-}
-
-.final-result{
-  font-size:30px;
-  flex:1;
-  margin: 15px 25px 10px 0px;
-  display: flex;
-  color:white;
-  justify-content: right;
-}
-
 .button-layout{
   padding: 20px;
   display: grid;

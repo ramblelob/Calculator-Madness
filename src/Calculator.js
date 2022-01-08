@@ -29,7 +29,7 @@ const Calculator = () => {
     return (
         <div className='App'>
         <div className="show-calculation">
-        <span className="result-calculation"> { result.length >= 16 ? "Result" : result}</span>
+        <span className="result-calculation"> { result === 0 ? "Result" : result}</span>
       </div>
             <div className='button-layout'>
                     <button name="C" onClick={handleClear}>C</button>
